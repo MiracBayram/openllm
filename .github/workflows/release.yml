@@ -22,6 +22,9 @@ jobs:
           - platform: 'ubuntu-22.04'
             args: ''
             target: 'x86_64-unknown-linux-gnu'
+          - platform: 'ubuntu-24.04-arm'
+            args: ''
+            target: 'aarch64-unknown-linux-gnu'
           - platform: 'ubuntu-22.04'
             args: '--target i686-unknown-linux-gnu'
             target: 'i686-unknown-linux-gnu'
@@ -49,11 +52,11 @@ jobs:
         with:
           targets: ${{ matrix.target }}
 
-      - name: install dependencies (ubuntu x64)
-        if: matrix.platform == 'ubuntu-22.04' && matrix.target == 'x86_64-unknown-linux-gnu'
+      - name: install dependencies (ubuntu x64 & arm64)
+        if: startsWith(matrix.platform, 'ubuntu') && matrix.target != 'i686-unknown-linux-gnu'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf rpm
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf rpm pacman-package-manager fakeroot
 
       - name: install dependencies (ubuntu i386)
         if: matrix.platform == 'ubuntu-22.04' && matrix.target == 'i686-unknown-linux-gnu'
