@@ -55,15 +55,17 @@ export function ArenaView() {
         </div>
         
         <GlassPanel intensity="low" className="flex items-center gap-4 px-4 py-2 border-forge-border-subtle">
-          <div className="flex items-center gap-2">
-            <Icon icon={Users} className="text-forge-accent" size={18} />
-            <span className="font-mono text-forge-text font-bold text-sm">3 AGENTS</span>
-          </div>
-          <div className="w-px h-4 bg-forge-border" />
-          <div className="flex items-center gap-2">
-            <Icon icon={Zap} className="text-forge-warning" size={18} />
-            <span className="font-mono text-forge-text font-bold text-sm">AUTO-RESOLVE</span>
-          </div>
+          <>
+            <div className="flex items-center gap-2">
+              <Icon icon={Users} className="text-forge-accent" size={18} />
+              <span className="font-mono text-forge-text font-bold text-sm">3 AGENTS</span>
+            </div>
+            <div className="w-px h-4 bg-forge-border" />
+            <div className="flex items-center gap-2">
+              <Icon icon={Zap} className="text-forge-warning" size={18} />
+              <span className="font-mono text-forge-text font-bold text-sm">AUTO-RESOLVE</span>
+            </div>
+          </>
         </GlassPanel>
       </div>
 
@@ -71,49 +73,51 @@ export function ArenaView() {
         {/* Arena Configuration Sidebar */}
         <div className="w-80 flex flex-col gap-4">
           <GlassPanel className="p-4 flex flex-col gap-4 border-forge-accent/20 flex-1">
-            <div className="font-mono text-xs text-forge-accent tracking-widest uppercase font-bold border-b border-forge-border pb-2 mb-2">
-              Configuration
-            </div>
-            
-            <div className="flex flex-col gap-2">
-              <label className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">Debate Topic</label>
-              <textarea 
-                className="w-full bg-forge-surface-2 border border-forge-border rounded-lg p-3 text-sm font-mono text-forge-text focus:outline-none focus:border-forge-accent transition-colors resize-none h-32"
-                placeholder="Enter a topic for the agents to discuss..."
-                value={topic}
-                onChange={e => setTopic(e.target.value)}
-                disabled={isRunning}
-              />
-            </div>
-
-            <div className="flex flex-col gap-2 flex-1">
-              <label className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">Active Participants</label>
-              <div className="flex flex-col gap-2">
-                {DUMMY_AGENTS.map(agent => (
-                  <div key={agent.id} className="flex items-center gap-3 p-2 rounded border border-forge-border bg-forge-surface-2/50">
-                    <div className="w-2 h-2 rounded-full shadow-[0_0_5px_currentColor]" style={{ color: agent.color, backgroundColor: agent.color }} />
-                    <div className="flex flex-col">
-                      <span className="font-mono text-sm text-forge-text font-bold">{agent.name}</span>
-                      <span className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">{agent.role}</span>
-                    </div>
-                  </div>
-                ))}
+            <>
+              <div className="font-mono text-xs text-forge-accent tracking-widest uppercase font-bold border-b border-forge-border pb-2 mb-2">
+                Configuration
               </div>
-            </div>
+              
+              <div className="flex flex-col gap-2">
+                <label className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">Debate Topic</label>
+                <textarea 
+                  className="w-full bg-forge-surface-2 border border-forge-border rounded-lg p-3 text-sm font-mono text-forge-text focus:outline-none focus:border-forge-accent transition-colors resize-none h-32"
+                  placeholder="Enter a topic for the agents to discuss..."
+                  value={topic}
+                  onChange={e => setTopic((e.target as HTMLTextAreaElement).value)}
+                  disabled={isRunning}
+                />
+              </div>
 
-            <div className="mt-auto">
-              {isRunning ? (
-                <NeonButton variant="danger" className="w-full" onClick={handleStop}>
-                  <Icon icon={Square} size={16} className="inline-block mr-2 -mt-0.5" />
-                  Halt Simulation
-                </NeonButton>
-              ) : (
-                <NeonButton variant="accent" className="w-full" onClick={handleStart} disabled={!topic.trim()}>
-                  <Icon icon={Play} size={16} className="inline-block mr-2 -mt-0.5" />
-                  Initialize Arena
-                </NeonButton>
-              )}
-            </div>
+              <div className="flex flex-col gap-2 flex-1">
+                <label className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">Active Participants</label>
+                <div className="flex flex-col gap-2">
+                  {DUMMY_AGENTS.map(agent => (
+                    <div key={agent.id} className="flex items-center gap-3 p-2 rounded border border-forge-border bg-forge-surface-2/50">
+                      <div className="w-2 h-2 rounded-full shadow-[0_0_5px_currentColor]" style={{ color: agent.color, backgroundColor: agent.color }} />
+                      <div className="flex flex-col">
+                        <span className="font-mono text-sm text-forge-text font-bold">{agent.name}</span>
+                        <span className="font-mono text-[10px] text-forge-text-muted uppercase tracking-wider">{agent.role}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                {isRunning ? (
+                  <NeonButton variant="danger" className="w-full" onClick={handleStop}>
+                    <Icon icon={Square} size={16} className="inline-block mr-2 -mt-0.5" />
+                    Halt Simulation
+                  </NeonButton>
+                ) : (
+                  <NeonButton variant="accent" className="w-full" onClick={handleStart} disabled={!topic.trim()}>
+                    <Icon icon={Play} size={16} className="inline-block mr-2 -mt-0.5" />
+                    Initialize Arena
+                  </NeonButton>
+                )}
+              </div>
+            </>
           </GlassPanel>
         </div>
 

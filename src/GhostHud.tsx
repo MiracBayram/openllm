@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTauriEvent } from './hooks/useTauriEvent';
-import { TelemetryRingBuffer } from './hooks/useStreamBypass'; // Reuse the ring buffer logic if needed, or just state
 
 interface HardwareTick {
   vram_used: number;

@@ -2,8 +2,8 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 interface UiState {
-  activeTab: 'chat' | 'hub' | 'server' | 'agents' | 'knowledge' | 'settings';
-  setActiveTab: (tab: 'chat' | 'hub' | 'server' | 'agents' | 'knowledge' | 'settings') => void;
+  activeTab: 'chat' | 'hub' | 'server' | 'agents' | 'knowledge' | 'settings' | 'arena';
+  setActiveTab: (tab: 'chat' | 'hub' | 'server' | 'agents' | 'knowledge' | 'settings' | 'arena') => void;
   inspectorOpen: boolean;
   toggleInspector: () => void;
   setInspectorOpen: (val: boolean) => void;

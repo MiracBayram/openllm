@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { invoke } from '@tauri-apps/api/core';
-import { useMicroInteractions } from './hooks/useMicroInteractions';
+
 import { HardwareHUD } from './components/HardwareHUD';
 import { PersonaMorphOverlay } from './components/ui/PersonaMorphOverlay';
 import { ChatView } from './components/ChatView';
