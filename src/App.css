@@ -1,0 +1,369 @@
+@import "tailwindcss";
+
+/* =========================================
+   FORGE NATIVE OS THEME (DEFAULT: DARK)
+   ========================================= */
+
+@theme {
+  /* --- FONT STACK --- */
+  --font-sans: var(--font-primary, 'Space Grotesk', 'Inter', sans-serif);
+  --font-mono: var(--font-secondary, 'JetBrains Mono', monospace);
+  --font-orbitron: 'Orbitron', sans-serif;
+
+  /* --- CORE PALETTE (Mapped to runtime vars) --- */
+  --color-forge-bg: var(--forge-bg);
+  --color-forge-surface: var(--forge-surface);
+  --color-forge-surface-2: var(--forge-surface-2);
+  --color-forge-surface-3: var(--forge-surface-3);
+  
+  /* --- BORDERS & DIVIDERS --- */
+  --color-forge-border: var(--forge-border);
+  --color-forge-border-subtle: var(--forge-border-subtle);
+  
+  /* --- TEXT HIERARCHY --- */
+  --color-forge-text: var(--forge-text);
+  --color-forge-text-secondary: var(--forge-text-secondary);
+  --color-forge-text-muted: var(--forge-text-muted);
+  
+  /* --- ACCENT COLORS --- */
+  --color-forge-accent: var(--forge-accent);
+  --color-forge-accent-hover: var(--forge-accent-hover);
+  --color-forge-accent-muted: var(--forge-accent-muted);
+  
+  /* --- SEMANTIC COLORS --- */
+  --color-forge-danger: var(--forge-danger);
+  --color-forge-danger-bg: var(--forge-danger-bg);
+  --color-forge-warning: var(--forge-warning);
+  --color-forge-warning-bg: var(--forge-warning-bg);
+  --color-forge-success: var(--forge-success);
+  --color-forge-success-bg: var(--forge-success-bg);
+}
+
+/* =========================================
+   GOD-TIER MASTER THEMES
+   ========================================= */
+
+/* 1. SPECTRAL MATRIX (High-End Tactical / Cyberpunk 2077 / Glassmorphism) */
+:root, :root[data-theme="spectral_matrix"] {
+  --forge-bg: #030407;
+  --forge-surface: rgba(10, 15, 25, 0.4);
+  --forge-surface-2: rgba(15, 20, 35, 0.5);
+  --forge-surface-3: rgba(20, 25, 45, 0.6);
+  --forge-border: rgba(0, 229, 255, 0.2);
+  --forge-border-subtle: rgba(0, 229, 255, 0.05);
+  --forge-text: #E0F2FE;
+  --forge-text-secondary: #94A3B8;
+  --forge-text-muted: #475569;
+  --forge-accent: #00E5FF;
+  --forge-accent-hover: #4DFFFF;
+  --forge-accent-muted: rgba(0, 229, 255, 0.15);
+  --forge-danger: #FF003C;
+  --forge-danger-bg: rgba(255, 0, 60, 0.1);
+  --forge-warning: #FF00FF; /* Magenta */
+  --forge-warning-bg: rgba(255, 0, 255, 0.1);
+  --forge-success: #00FFCC;
+  --forge-success-bg: rgba(0, 255, 204, 0.1);
+  
+  --font-primary: 'Chakra Petch', sans-serif;
+  --font-secondary: 'JetBrains Mono', monospace;
+  
+  --panel-radius: 2px;
+  --panel-blur: blur(24px) saturate(150%);
+  --panel-shadow: 0 0 15px rgba(0, 229, 255, 0.05), inset 0 0 20px rgba(0, 229, 255, 0.02);
+  --panel-bevel: none;
+}
+
+/* 2. NEURAL DECAY (Brutalist Skeuomorphism / Evangelion MAGI) */
+:root[data-theme="neural_decay"] {
+  --forge-bg: #06070D;
+  --forge-surface: #0A0C14;
+  --forge-surface-2: #111422;
+  --forge-surface-3: #181C30;
+  --forge-border: #2A3040;
+  --forge-border-subtle: rgba(42, 48, 64, 0.5);
+  --forge-text: #E0E6ED;
+  --forge-text-secondary: #8A96A8;
+  --forge-text-muted: #424A5C;
+  --forge-accent: #00E5FF;
+  --forge-accent-hover: #4DFFFF;
+  --forge-accent-muted: rgba(0, 229, 255, 0.15);
+  --forge-danger: #FF2D95;
+  --forge-danger-bg: rgba(255, 45, 149, 0.1);
+  --forge-warning: #FFD600;
+  --forge-warning-bg: rgba(255, 214, 0, 0.1);
+  --forge-success: #00FFCC;
+  --forge-success-bg: rgba(0, 255, 204, 0.1);
+  
+  --font-primary: 'Syncopate', sans-serif;
+  --font-secondary: 'Space Mono', monospace;
+  
+  --panel-radius: 0px;
+  --panel-blur: none;
+  --panel-shadow: none;
+  --panel-bevel: none;
+}
+
+/* 3. KINETIC INDUSTRIAL (Hard-Tech Control / Winamp / Nostromo) */
+:root[data-theme="kinetic_industrial"] {
+  --forge-bg: #0B1320;
+  --forge-surface: #1E2532;
+  --forge-surface-2: #2B3440;
+  --forge-surface-3: #384554;
+  --forge-border: #323D4D;
+  --forge-border-subtle: #111824; /* Used for inset bevels */
+  --forge-text: #D1D9E6;
+  --forge-text-secondary: #9AA6B8;
+  --forge-text-muted: #546173;
+  --forge-accent: #FFB000; /* Amber */
+  --forge-accent-hover: #FFC94D;
+  --forge-accent-muted: rgba(255, 176, 0, 0.15);
+  --forge-danger: #E53935;
+  --forge-danger-bg: rgba(229, 57, 53, 0.1);
+  --forge-warning: #00E676; /* Phosphor Green used for gauges */
+  --forge-warning-bg: rgba(0, 230, 118, 0.1);
+  --forge-success: #00E676;
+  --forge-success-bg: rgba(0, 230, 118, 0.1);
+  
+  --font-primary: 'Chakra Petch', sans-serif;
+  --font-secondary: 'Share Tech Mono', monospace;
+  
+  --panel-radius: 2px;
+  --panel-blur: none;
+  --panel-shadow: inset 1px 1px 0px rgba(255,255,255,0.05), inset -1px -1px 0px rgba(0,0,0,0.8);
+  --panel-bevel: inset 2px 2px 5px rgba(0,0,0,0.8), inset -1px -1px 0px rgba(255,255,255,0.05); /* Bevel-in */
+}
+
+/* 4. SOLAR WITCH (Orange/Red) */
+:root[data-theme="solar_witch"] {
+  --forge-bg: #1A110B;
+  --forge-surface: #26160F;
+  --forge-surface-2: #331D14;
+  --forge-surface-3: #402419;
+  --forge-border: #4D2B1E;
+  --forge-border-subtle: #2D1A12;
+  --forge-text: #FFEDD5;
+  --forge-text-secondary: #FDBA74;
+  --forge-text-muted: #C2410C;
+  --forge-accent: #EA580C; /* Fiery Orange */
+  --forge-accent-hover: #F97316;
+  --forge-accent-muted: rgba(234, 88, 12, 0.15);
+  --forge-danger: #EF4444;
+  --forge-danger-bg: rgba(239, 68, 68, 0.1);
+  --forge-warning: #F59E0B;
+  --forge-warning-bg: rgba(245, 158, 11, 0.1);
+  --forge-success: #10B981;
+  --forge-success-bg: rgba(16, 185, 129, 0.1);
+  
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'JetBrains Mono', monospace;
+  
+  --panel-radius: 8px;
+  --panel-blur: blur(12px);
+  --panel-shadow: 0 4px 20px rgba(234, 88, 12, 0.1);
+  --panel-bevel: none;
+}
+
+/* 5. LEGACY FORGE (The Classic Orangey Look) */
+:root[data-theme="legacy_forge"] {
+  --forge-bg: #141517;
+  --forge-surface: #1E1F22;
+  --forge-surface-2: #25262A;
+  --forge-surface-3: #2B2D31;
+  --forge-border: #3A3C41;
+  --forge-border-subtle: #242528;
+  --forge-text: #F2F3F5;
+  --forge-text-secondary: #B5BAC1;
+  --forge-text-muted: #80848E;
+  --forge-accent: #FF6B00; /* Classic Forge Orange */
+  --forge-accent-hover: #FF8533;
+  --forge-accent-muted: rgba(255, 107, 0, 0.15);
+  --forge-danger: #F23F42;
+  --forge-danger-bg: rgba(242, 63, 66, 0.1);
+  --forge-warning: #F0B132;
+  --forge-warning-bg: rgba(240, 177, 50, 0.1);
+  --forge-success: #23A559;
+  --forge-success-bg: rgba(35, 165, 89, 0.1);
+  
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'JetBrains Mono', monospace;
+  
+  --panel-radius: 8px;
+  --panel-blur: none;
+  --panel-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  --panel-bevel: none;
+}
+
+
+/* =========================================
+   GLOBAL STYLES (Anti-AMOLED, Smooth)
+   ========================================= */
+
+html, body, #root {
+  background-color: var(--forge-bg);
+  color: var(--forge-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Masterpiece Static SVG Noise */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+/* Kinetic Industrial Specific: Horizontal Scanlines */
+:root[data-theme="kinetic_industrial"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Scrollbar Styling (Native OS Feel) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--forge-border);
+  border-radius: var(--panel-radius);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--forge-surface-3);
+}
+
+/* Utilities */
+@layer utilities {
+  /* The Elite Cockpit Panel */
+  .skeuo-panel {
+    background-color: var(--forge-surface);
+    border: 1px solid var(--forge-border);
+    border-radius: var(--panel-radius);
+    box-shadow: var(--panel-shadow, 0 25px 50px -12px rgba(0, 0, 0, 0.5));
+    backdrop-filter: var(--panel-blur, blur(16px));
+    -webkit-backdrop-filter: var(--panel-blur, blur(16px));
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* The Aging Terminal (Scars & Circuitry) */
+  .skeuo-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: calc(var(--age-factor, 0) * 0.4);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L20,10 L25,15 L25,30 M80,90 L90,90 L95,85 M40,20 L50,20 L55,25 L55,40' stroke='var(--color-forge-accent)' stroke-width='0.5' fill='none' opacity='0.5'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    mix-blend-mode: overlay;
+    z-index: 0;
+  }
+
+  /* Deep Bevel for Kinetic Industrial (Inputs, chat bubbles) */
+  .skeuo-bevel-in {
+    box-shadow: var(--panel-bevel, none);
+  }
+
+  /* Living Border Glow (Requires --mx and --my from JS) */
+  .glass-panel-glow {
+    position: relative;
+  }
+  .glass-panel-glow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px; /* border thickness */
+    background: radial-gradient(120px circle at var(--mx, -100px) var(--my, -100px), var(--forge-accent), transparent 70%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    opacity: 0.8;
+  }
+
+  /* Minimalist Button */
+  .skeuo-btn {
+    background: var(--forge-surface-2);
+    border: 1px solid var(--forge-border);
+    border-radius: var(--panel-radius);
+    box-shadow: var(--panel-shadow);
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, transform 0.05s ease;
+  }
+  .skeuo-btn:hover {
+    background: var(--forge-surface-3);
+  }
+  .skeuo-btn:active {
+    background: var(--forge-border);
+    transform: scale(0.98);
+  }
+
+  /* Cockpit Slider */
+  .cockpit-slider {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 6px;
+    background: var(--forge-surface-3);
+    border-radius: var(--panel-radius);
+    outline: none;
+    box-shadow: var(--panel-bevel);
+  }
+  .cockpit-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--forge-accent);
+    border-radius: var(--panel-radius);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: var(--panel-shadow);
+  }
+  .cockpit-slider::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+  }
+  
+  /* Text Shadow Glow Utilities */
+  .text-shadow-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

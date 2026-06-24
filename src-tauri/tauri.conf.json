@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Forge",
+  "version": "0.1.0",
+  "identifier": "dev.forge-app.forge",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Forge",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob:; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' ipc: http://127.0.0.1:* ws://127.0.0.1:* https://huggingface.co https://*.hf.co https://github.com https://objects.githubusercontent.com https://raw.githubusercontent.com; font-src 'self' data:; manifest-src 'self';"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://api.github.com/repos/dev/forge/releases/latest"
+      ],
+      "pubkey": "dW50cnVzdGVkLWtleQ=="
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "Forge AI",
+    "category": "DeveloperTool",
+    "shortDescription": "AI model inference orchestrator",
+    "longDescription": "Forge is a desktop application for orchestrating and running local AI models, supporting multiple inference engines including llama.cpp, vLLM, and LMDeploy.",
+    "copyright": "2025 Forge AI"
+  }
+}

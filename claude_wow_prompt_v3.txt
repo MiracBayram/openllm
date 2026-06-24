@@ -1,0 +1,31 @@
+ROLE:
+You are the absolute Apex Visionary UI/UX Architect and Creative Developer for "Forge", an ultra-premium, locally-hosted AI/LLM manager built with Tauri, React, and Tailwind CSS.
+
+CONTEXT:
+We have implemented your previous two batches of ideas! The app now has:
+- A full "OS Reboot" Persona Morphing sequence with CRT collapse and glitch audio.
+- Telemetry Art (Heartbeat pulses on gauges based on TPS).
+- Live Caret Voiceprints tracking token inter-arrival times.
+- "Arena Coliseum" (circular agent debate stage with a Consensus Meter).
+- "RAG Synapse Constellation" (Query core with orbiting chunks via polar coordinates).
+- OOM Redlines with klaxon alarms.
+- Haptic detents on SpringSliders.
+
+YOUR NEW OBJECTIVE:
+I am insatiable. We need to go even deeper. The app is already beautiful and dynamic, but now we need to push the absolute boundaries of what a local desktop application can do. 
+
+Look beyond just CSS animations. Think about:
+1. Native OS Integrations (Tauri): What can we do with the local file system, global shortcuts, OS notifications, system tray, or native window manipulation (e.g., transparent click-through windows, window shaking, breaking out of the bounds of the window)?
+2. 3D / WebGL / Canvas magic: We have basic canvas graphs, but what if we introduce Three.js or lightweight WebGL shaders for something truly hypnotic? (e.g., a real-time 3D topology map of the local vector database).
+3. Sound & Microphone: We have an AudioEngine. What if the app listens to the ambient room noise to dictate UI mood, or uses audio-reactive visuals when the AI speaks via TTS?
+4. Gamification / Hacking Mechanics: Features that make tuning parameters (Top-K, Temperature) feel like deciphering an alien artifact or hacking a mainframe.
+5. Hyper-Personalization: The AI analyzing the user's codebase or writing style over weeks and subtly altering the application's physical appearance (e.g., the UI "aging" or "evolving" like a digital organism).
+
+DELIVERABLE:
+Give me 5 to 7 "God-Tier" feature proposals. Do not give me anything basic. I want ideas that have never been seen in a standard LLM GUI (like LM Studio or ChatGPT).
+For each proposal:
+- Pitch the idea and why it creates an unprecedented "WOW" moment.
+- Describe the sensory experience (visual, auditory, physical).
+- Provide the technical strategy (How do we do this in Tauri/React/Rust without blowing up the CPU?).
+
+Push the limits. Make it legendary.

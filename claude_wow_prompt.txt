@@ -1,0 +1,21 @@
+Act as the Lead Visionary UI/UX Architect and Creative Developer for "Forge", an ultra-premium, locally-hosted AI/LLM manager built with Tauri, React, and Tailwind CSS. 
+
+I have attached the `denetim_4-1.tar.gz` archive containing the current state of the codebase. 
+
+YOUR OBJECTIVE:
+Do NOT focus on bug fixes, refactoring, or basic maintenance. Your sole mission is to analyze the current codebase and propose mind-blowing, jaw-dropping "WOW" features that will make the end-user feel incredibly special, powerful, and utterly impressed. I want features that make the user say, "Wow, I can't believe they added this!" 
+
+AREAS OF FOCUS FOR "WOW" FACTORS:
+1. Hyper-Aesthetics & Micro-interactions: We use Framer Motion and Tailwind. Suggest hyper-premium, cyberpunk/sci-fi command center touches. Think of magnetic buttons, fluid glassmorphism, glowing borders that follow the cursor, or subtle screen shake effects during heavy LLM generation.
+2. The "Operator" Feel: How can we make the user feel like an elite hacker or starship captain? Think of personalized greeting sequences, dynamic boot-up animations, or contextual AI awareness (e.g., the UI reacting to the time of day or the user's typing speed).
+3. Telemetry Art: We have a Hardware HUD (CPU/VRAM/RAM). How can we turn these mundane stats into beautiful, organic, or futuristic data visualizations (like cyberpunk audio visualizers or neural network glowing nodes)?
+4. Persona Morphing: We already have personas (Black Ice, Neon Rain, Solar Witch) that change the UI theme. What crazy, out-of-the-box UI/audio/visual changes can we add to make switching personas feel like switching entirely different operating systems?
+5. "Quality of Life" Superpowers: Features that the user didn't know they needed but will absolutely love (e.g., semantic search across chats that feels like a mind-reader, incredibly satisfying drag-and-drop mechanics, or "Matrix" style terminal logs).
+
+DELIVERABLE:
+Do not give me generic advice. Analyze the provided codebase and give me 5 to 7 concrete, highly creative feature proposals. For each proposal:
+- Pitch the idea and explain why it creates a "WOW" moment.
+- Describe exactly how the user will experience it visually and emotionally.
+- Provide a targeted code snippet or a specific technical strategy on how to implement this "WOW" effect in our current stack (React/Framer Motion/Tailwind/Tauri).
+
+Ignite your imagination. Let's build a masterpiece.

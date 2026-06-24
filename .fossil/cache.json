@@ -1,0 +1,5865 @@
+{
+  "entries": {
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs",
+      "content_hash": 10187795503789965249,
+      "nodes": [
+        {
+          "id": 126,
+          "name": "DownloadEvent",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs",
+            "line_start": 14,
+            "line_end": 17,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "DownloadEvent",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 127,
+          "name": "preallocate_file_os_level",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs",
+            "line_start": 19,
+            "line_end": 25,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "preallocate_file_os_level",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 128,
+          "name": "throttle_progress",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs",
+            "line_start": 27,
+            "line_end": 38,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 12,
+          "full_name": "throttle_progress",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 129,
+          "name": "download_model_securely",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/downloader.rs",
+            "line_start": 42,
+            "line_end": 111,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 70,
+          "full_name": "download_model_securely",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 128,
+          "to": 126,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 129,
+          "to": 127,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 129,
+          "to": 128,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 129,
+          "to": 126,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/memory.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/memory.rs",
+      "content_hash": 7892067621361045665,
+      "nodes": [
+        {
+          "id": 155,
+          "name": "MemoryInfo",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/memory.rs",
+            "line_start": 5,
+            "line_end": 11,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "MemoryInfo",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 156,
+          "name": "get_memory_info",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/memory.rs",
+            "line_start": 13,
+            "line_end": 24,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 12,
+          "full_name": "get_memory_info",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 156,
+          "to": 155,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs",
+      "content_hash": 1871216824585171365,
+      "nodes": [
+        {
+          "id": 184,
+          "name": "ModelMetadata",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs",
+            "line_start": 15,
+            "line_end": 19,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "ModelMetadata",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 185,
+          "name": "is_valid_magic_bytes",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs",
+            "line_start": 22,
+            "line_end": 24,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "ModelMetadata::is_valid_magic_bytes",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 186,
+          "name": "parse_model_metadata",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs",
+            "line_start": 34,
+            "line_end": 72,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 39,
+          "full_name": "parse_model_metadata",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 187,
+          "name": "predict_best_engine",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/smart_router.rs",
+            "line_start": 74,
+            "line_end": 110,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 37,
+          "full_name": "predict_best_engine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 186,
+          "to": 184,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 186,
+          "to": 184,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 187,
+          "to": 185,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/server/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/server/mod.rs",
+      "content_hash": 7609067900520256439,
+      "nodes": [
+        {
+          "id": 188,
+          "name": "start_server",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/server/mod.rs",
+            "line_start": 9,
+            "line_end": 49,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 41,
+          "full_name": "start_server",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 189,
+          "name": "chat_completions",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/server/mod.rs",
+            "line_start": 51,
+            "line_end": 54,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 4,
+          "full_name": "chat_completions",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 188,
+          "to": 189,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/vite.config.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/vite.config.ts",
+      "content_hash": 13347865532536770905,
+      "nodes": [
+        {
+          "id": 190,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/vite.config.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/vite.config.ts",
+            "line_start": 1,
+            "line_end": 34,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 34,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/vite.config.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        190
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts",
+      "content_hash": 4788941859534048261,
+      "nodes": [
+        {
+          "id": 65,
+          "name": "useTelemetryHUD",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts",
+            "line_start": 23,
+            "line_end": 51,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 29,
+          "full_name": "useTelemetryHUD",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 66,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts",
+            "line_start": 1,
+            "line_end": 51,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 51,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/telemetryStore.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        66
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/lib.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/lib.rs",
+      "content_hash": 8498407724652999151,
+      "nodes": [
+        {
+          "id": 133,
+          "name": "AppState",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/lib.rs",
+            "line_start": 15,
+            "line_end": 19,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "AppState",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 134,
+          "name": "run",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/lib.rs",
+            "line_start": 22,
+            "line_end": 110,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 89,
+          "full_name": "run",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "cfg_attr(mobile, tauri::mobile_entry_point)"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 134,
+          "to": 134,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 134,
+          "to": 133,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        134
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/uiStore.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/uiStore.ts",
+      "content_hash": 11517778870918726245,
+      "nodes": [
+        {
+          "id": 67,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/uiStore.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/uiStore.ts",
+            "line_start": 1,
+            "line_end": 26,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 26,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/uiStore.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        67
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gguf.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gguf.rs",
+      "content_hash": 679298806328245348,
+      "nodes": [
+        {
+          "id": 149,
+          "name": "GgufMeta",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gguf.rs",
+            "line_start": 6,
+            "line_end": 12,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "GgufMeta",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:serde::Serialize",
+            "derive:serde::Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 150,
+          "name": "read_gguf_meta",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gguf.rs",
+            "line_start": 26,
+            "line_end": 148,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 123,
+          "full_name": "read_gguf_meta",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 150,
+          "to": 149,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/chatStore.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/chatStore.ts",
+      "content_hash": 1293422836714997782,
+      "nodes": [
+        {
+          "id": 60,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/chatStore.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/chatStore.ts",
+            "line_start": 1,
+            "line_end": 28,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 28,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/chatStore.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        60
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx",
+      "content_hash": 7386116710853447101,
+      "nodes": [
+        {
+          "id": 13,
+          "name": "HardwareHUD",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx",
+            "line_start": 7,
+            "line_end": 129,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 123,
+          "full_name": "HardwareHUD",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 14,
+          "name": "render",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx",
+            "line_start": 21,
+            "line_end": 69,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 49,
+          "full_name": "HardwareHUD.render",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 15,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx",
+            "line_start": 1,
+            "line_end": 129,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 129,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/HardwareHUD.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 13,
+          "to": 14,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        15
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/hardware.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/hardware.ts",
+      "content_hash": 2831606569019466504,
+      "nodes": [
+        {
+          "id": 62,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/hardware.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/hardware.ts",
+            "line_start": 1,
+            "line_end": 42,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 42,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/hardware.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        62
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+      "content_hash": 2119878079038347232,
+      "nodes": [
+        {
+          "id": 171,
+          "name": "FlagContext",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 5,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "FlagContext",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 172,
+          "name": "FlagStrategy",
+          "kind": "Trait",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 11,
+            "line_end": 19,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "FlagStrategy",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 173,
+          "name": "detect_optimal_threads_and_mask",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 22,
+            "line_end": 36,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 15,
+          "full_name": "detect_optimal_threads_and_mask",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 174,
+          "name": "build_numa_wrapper",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 38,
+            "line_end": 49,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 12,
+          "full_name": "build_numa_wrapper",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 175,
+          "name": "build_affinity_wrapper",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 51,
+            "line_end": 71,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 21,
+          "full_name": "build_affinity_wrapper",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 176,
+          "name": "GenericFlagStrategy",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 73,
+            "line_end": 73,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "GenericFlagStrategy",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:FlagStrategy"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 177,
+          "name": "engine_id",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 76,
+            "line_end": 78,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "GenericFlagStrategy::engine_id",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:FlagStrategy",
+            "implements:FlagStrategy"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 178,
+          "name": "build_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 80,
+            "line_end": 145,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 66,
+          "full_name": "GenericFlagStrategy::build_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:FlagStrategy",
+            "implements:FlagStrategy"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 179,
+          "name": "build_envs",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 147,
+            "line_end": 160,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 14,
+          "full_name": "GenericFlagStrategy::build_envs",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:FlagStrategy",
+            "implements:FlagStrategy"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 180,
+          "name": "build_pre_wrapper",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 162,
+            "line_end": 182,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 21,
+          "full_name": "GenericFlagStrategy::build_pre_wrapper",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:FlagStrategy",
+            "implements:FlagStrategy"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 181,
+          "name": "get_strategy",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/flag_gen.rs",
+            "line_start": 185,
+            "line_end": 188,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "get_strategy",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 175,
+          "to": 173,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 178,
+          "to": 173,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 180,
+          "to": 174,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 180,
+          "to": 175,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 172,
+          "to": 177,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 172,
+          "to": 178,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 172,
+          "to": 179,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 172,
+          "to": 180,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 181,
+          "to": 176,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+      "content_hash": 5067421165681627017,
+      "nodes": [
+        {
+          "id": 37,
+          "name": "TitleBar",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+            "line_start": 8,
+            "line_end": 76,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 69,
+          "full_name": "TitleBar",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 38,
+          "name": "handleMinimize",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+            "line_start": 16,
+            "line_end": 16,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "TitleBar.handleMinimize",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 39,
+          "name": "handleMaximize",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+            "line_start": 17,
+            "line_end": 17,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "TitleBar.handleMaximize",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 40,
+          "name": "handleClose",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+            "line_start": 18,
+            "line_end": 18,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "TitleBar.handleClose",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 41,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx",
+            "line_start": 1,
+            "line_end": 76,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 76,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/TitleBar.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 37,
+          "to": 40,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 37,
+          "to": 38,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 37,
+          "to": 39,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        41
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx",
+      "content_hash": 2988777547395132814,
+      "nodes": [
+        {
+          "id": 9,
+          "name": "getWorker",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx",
+            "line_start": 9,
+            "line_end": 22,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Private",
+          "lines_of_code": 14,
+          "full_name": "getWorker",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 10,
+          "name": "CodeBlock",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx",
+            "line_start": 24,
+            "line_end": 72,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 49,
+          "full_name": "CodeBlock",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 11,
+          "name": "handleCopy",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx",
+            "line_start": 44,
+            "line_end": 48,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "CodeBlock.handleCopy",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 12,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx",
+            "line_start": 1,
+            "line_end": 72,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 72,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/CodeBlock.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 10,
+          "to": 9,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        12
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+      "content_hash": 16114918274616329637,
+      "nodes": [
+        {
+          "id": 88,
+          "name": "LlamaCppAdapter",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 10,
+            "line_end": 10,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "LlamaCppAdapter",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 89,
+          "name": "new",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 13,
+            "line_end": 15,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "LlamaCppAdapter::new",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 90,
+          "name": "default",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 19,
+            "line_end": 21,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "LlamaCppAdapter::default",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:Default",
+            "implements:Default"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 91,
+          "name": "name",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 26,
+            "line_end": 28,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "LlamaCppAdapter::name",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 92,
+          "name": "is_available",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 30,
+            "line_end": 39,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 10,
+          "full_name": "LlamaCppAdapter::is_available",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 93,
+          "name": "suitability_score",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 41,
+            "line_end": 56,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 16,
+          "full_name": "LlamaCppAdapter::suitability_score",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 94,
+          "name": "generate_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 58,
+            "line_end": 66,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 9,
+          "full_name": "LlamaCppAdapter::generate_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 95,
+          "name": "spawn",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 68,
+            "line_end": 92,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 25,
+          "full_name": "LlamaCppAdapter::spawn",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 96,
+          "name": "mock_profile",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 100,
+            "line_end": 143,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 44,
+          "full_name": "mock_profile",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "cfg_test"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 97,
+          "name": "test_generate_flags_mlock",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/llamacpp.rs",
+            "line_start": 146,
+            "line_end": 159,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 14,
+          "full_name": "test_generate_flags_mlock",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "test",
+            "cfg_test"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 90,
+          "to": 89,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 92,
+          "to": 89,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 95,
+          "to": 89,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 95,
+          "to": 95,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 97,
+          "to": 96,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 97,
+          "to": 89,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 97,
+          "to": 94,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 96,
+          "to": 91,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 97,
+          "to": 88,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 88,
+          "to": 89,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/configStore.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/configStore.ts",
+      "content_hash": 3367477267900154881,
+      "nodes": [
+        {
+          "id": 61,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/configStore.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/configStore.ts",
+            "line_start": 1,
+            "line_end": 117,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 117,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/configStore.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        61
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/mod.rs",
+      "content_hash": 14085081142933474196,
+      "nodes": [],
+      "edges": [],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts",
+      "content_hash": 6873783843900996611,
+      "nodes": [
+        {
+          "id": 47,
+          "name": "useHardwareLerp",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts",
+            "line_start": 12,
+            "line_end": 66,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 55,
+          "full_name": "useHardwareLerp",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 48,
+          "name": "loop",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts",
+            "line_start": 39,
+            "line_end": 46,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 8,
+          "full_name": "loop",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 49,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts",
+            "line_start": 1,
+            "line_end": 66,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 66,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useHardwareLerp.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 47,
+          "to": 48,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        49
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts",
+      "content_hash": 16112720504319188439,
+      "nodes": [
+        {
+          "id": 54,
+          "name": "useStreamBypass",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts",
+            "line_start": 4,
+            "line_end": 38,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 35,
+          "full_name": "useStreamBypass",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 55,
+          "name": "flushBufferToDOM",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts",
+            "line_start": 9,
+            "line_end": 15,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "flushBufferToDOM",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 56,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts",
+            "line_start": 1,
+            "line_end": 38,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 38,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useStreamBypass.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 54,
+          "to": 55,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        56
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/build.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/build.rs",
+      "content_hash": 5676094898456963749,
+      "nodes": [
+        {
+          "id": 76,
+          "name": "main",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/build.rs",
+            "line_start": 1,
+            "line_end": 3,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "main",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        76
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx",
+      "content_hash": 5688099301366396339,
+      "nodes": [
+        {
+          "id": 33,
+          "name": "SettingsView",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx",
+            "line_start": 7,
+            "line_end": 133,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 127,
+          "full_name": "SettingsView",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 34,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx",
+            "line_start": 1,
+            "line_end": 133,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 133,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/SettingsView.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        34
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs",
+      "content_hash": 9170327238575388885,
+      "nodes": [
+        {
+          "id": 151,
+          "name": "GpuInfo",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs",
+            "line_start": 4,
+            "line_end": 13,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 10,
+          "full_name": "GpuInfo",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 152,
+          "name": "get_gpu_info",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs",
+            "line_start": 24,
+            "line_end": 41,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 18,
+          "full_name": "get_gpu_info",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 153,
+          "name": "get_nvml_gpus",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs",
+            "line_start": 44,
+            "line_end": 84,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 41,
+          "full_name": "get_nvml_gpus",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "cfg"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 154,
+          "name": "get_sysinfo_fallback",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/gpu.rs",
+            "line_start": 86,
+            "line_end": 109,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 24,
+          "full_name": "get_sysinfo_fallback",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 152,
+          "to": 153,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 152,
+          "to": 154,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 152,
+          "to": 154,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 152,
+          "to": 154,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 153,
+          "to": 151,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx",
+      "content_hash": 2851031899110095099,
+      "nodes": [
+        {
+          "id": 30,
+          "name": "ServerView",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx",
+            "line_start": 6,
+            "line_end": 98,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 93,
+          "full_name": "ServerView",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 31,
+          "name": "toggleServer",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx",
+            "line_start": 11,
+            "line_end": 26,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 16,
+          "full_name": "ServerView.toggleServer",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 32,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx",
+            "line_start": 1,
+            "line_end": 98,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 98,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ServerView.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 30,
+          "to": 31,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        32
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/mod.rs",
+      "content_hash": 5895817037255835783,
+      "nodes": [
+        {
+          "id": 157,
+          "name": "HardwareProfile",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/mod.rs",
+            "line_start": 14,
+            "line_end": 20,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "HardwareProfile",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 158,
+          "name": "profile",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/mod.rs",
+            "line_start": 38,
+            "line_end": 77,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 40,
+          "full_name": "profile",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 159,
+          "name": "test_profile_runs_without_error",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/mod.rs",
+            "line_start": 84,
+            "line_end": 91,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 8,
+          "full_name": "test_profile_runs_without_error",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "test",
+            "cfg_test"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 158,
+          "to": 157,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 159,
+          "to": 158,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx",
+      "content_hash": 5609974286468899114,
+      "nodes": [
+        {
+          "id": 42,
+          "name": "Icon",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx",
+            "line_start": 12,
+            "line_end": 29,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 18,
+          "full_name": "Icon",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 43,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx",
+            "line_start": 1,
+            "line_end": 29,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 29,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Icon.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        43
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+      "content_hash": 12117067370707619949,
+      "nodes": [
+        {
+          "id": 68,
+          "name": "TelemetryRingBuffer",
+          "kind": "Class",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+            "line_start": 3,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 25,
+          "full_name": "TelemetryRingBuffer",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 69,
+          "name": "constructor",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+            "line_start": 8,
+            "line_end": 10,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "TelemetryRingBuffer.constructor",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 70,
+          "name": "push",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+            "line_start": 12,
+            "line_end": 16,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "TelemetryRingBuffer.push",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 71,
+          "name": "getOrderedData",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+            "line_start": 19,
+            "line_end": 26,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 8,
+          "full_name": "TelemetryRingBuffer.getOrderedData",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 72,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts",
+            "line_start": 1,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 27,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/utils/TelemetryRingBuffer.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 68,
+          "to": 69,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 68,
+          "to": 69,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        72
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/main.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/main.tsx",
+      "content_hash": 1273238769989070047,
+      "nodes": [
+        {
+          "id": 59,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/main.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/main.tsx",
+            "line_start": 1,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/main.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        59
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx",
+      "content_hash": 5448242891921524903,
+      "nodes": [
+        {
+          "id": 35,
+          "name": "Sidebar",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx",
+            "line_start": 5,
+            "line_end": 48,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 44,
+          "full_name": "Sidebar",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 36,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx",
+            "line_start": 1,
+            "line_end": 48,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 48,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/Sidebar.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        36
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/mod.rs",
+      "content_hash": 16427799223237274073,
+      "nodes": [
+        {
+          "id": 106,
+          "name": "build_engine_registry",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/mod.rs",
+            "line_start": 15,
+            "line_end": 22,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 8,
+          "full_name": "build_engine_registry",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 107,
+          "name": "EngineAdapter",
+          "kind": "Trait",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/mod.rs",
+            "line_start": 48,
+            "line_end": 67,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 20,
+          "full_name": "EngineAdapter",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx",
+      "content_hash": 3625100037581528884,
+      "nodes": [
+        {
+          "id": 44,
+          "name": "Select",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx",
+            "line_start": 17,
+            "line_end": 69,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 53,
+          "full_name": "Select",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 45,
+          "name": "handleOutsideClick",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx",
+            "line_start": 23,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "Select.handleOutsideClick",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 46,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx",
+            "line_start": 1,
+            "line_end": 69,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 69,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ui/Select.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 44,
+          "to": 45,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        46
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/inference.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/inference.ts",
+      "content_hash": 891551321853286589,
+      "nodes": [
+        {
+          "id": 63,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/inference.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/inference.ts",
+            "line_start": 1,
+            "line_end": 65,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 65,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/inference.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        63
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+      "content_hash": 11854125379786690263,
+      "nodes": [
+        {
+          "id": 108,
+          "name": "PowerInferAdapter",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 9,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "PowerInferAdapter",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 109,
+          "name": "new",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 12,
+            "line_end": 14,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "PowerInferAdapter::new",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 110,
+          "name": "default",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 18,
+            "line_end": 20,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "PowerInferAdapter::default",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:Default",
+            "implements:Default"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 111,
+          "name": "name",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 25,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "PowerInferAdapter::name",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 112,
+          "name": "is_available",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 29,
+            "line_end": 36,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 8,
+          "full_name": "PowerInferAdapter::is_available",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 113,
+          "name": "suitability_score",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 38,
+            "line_end": 49,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 12,
+          "full_name": "PowerInferAdapter::suitability_score",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 114,
+          "name": "generate_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 51,
+            "line_end": 86,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 36,
+          "full_name": "PowerInferAdapter::generate_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 115,
+          "name": "spawn",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/powerinfer.rs",
+            "line_start": 88,
+            "line_end": 132,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 45,
+          "full_name": "PowerInferAdapter::spawn",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 110,
+          "to": 109,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 112,
+          "to": 109,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 115,
+          "to": 115,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 115,
+          "to": 109,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 115,
+          "to": 115,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 115,
+          "to": 115,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 108,
+          "to": 109,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/template_engine.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/template_engine.rs",
+      "content_hash": 7655942091847087979,
+      "nodes": [
+        {
+          "id": 116,
+          "name": "ChatMessage",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/template_engine.rs",
+            "line_start": 5,
+            "line_end": 8,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "ChatMessage",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 117,
+          "name": "apply_chat_template",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/template_engine.rs",
+            "line_start": 10,
+            "line_end": 22,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 13,
+          "full_name": "apply_chat_template",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/main.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/main.rs",
+      "content_hash": 870527848074292224,
+      "nodes": [
+        {
+          "id": 135,
+          "name": "main",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/main.rs",
+            "line_start": 6,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 22,
+          "full_name": "main",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "cfg_attr(\n    all(not(debug_assertions), target_os = \"windows\"),\n    windows_subsystem = \"windows\"\n)"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        135
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts",
+      "content_hash": 18060034517292711060,
+      "nodes": [
+        {
+          "id": 50,
+          "name": "throttle",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts",
+            "line_start": 4,
+            "line_end": 13,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Private",
+          "lines_of_code": 10,
+          "full_name": "throttle",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 51,
+          "name": "useMagnetic",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts",
+            "line_start": 15,
+            "line_end": 55,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 41,
+          "full_name": "useMagnetic",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 52,
+          "name": "handleMouseLeave",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts",
+            "line_start": 37,
+            "line_end": 42,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 6,
+          "full_name": "handleMouseLeave",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 53,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts",
+            "line_start": 1,
+            "line_end": 55,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 55,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useMagnetic.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 51,
+          "to": 50,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 51,
+          "to": 52,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        53
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/flag_sanitizer.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/flag_sanitizer.rs",
+      "content_hash": 1528206152074709024,
+      "nodes": [
+        {
+          "id": 87,
+          "name": "sanitize_advanced_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/flag_sanitizer.rs",
+            "line_start": 4,
+            "line_end": 37,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 34,
+          "full_name": "sanitize_advanced_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx",
+      "content_hash": 17443025328176917625,
+      "nodes": [
+        {
+          "id": 28,
+          "name": "RightInspector",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx",
+            "line_start": 9,
+            "line_end": 140,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 132,
+          "full_name": "RightInspector",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 29,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx",
+            "line_start": 1,
+            "line_end": 140,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 140,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/RightInspector.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        29
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+      "content_hash": 14890448888820659040,
+      "nodes": [
+        {
+          "id": 3,
+          "name": "ChatView",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 15,
+            "line_end": 172,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 158,
+          "full_name": "ChatView",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 4,
+          "name": "handleSend",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 41,
+            "line_end": 64,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 24,
+          "full_name": "ChatView.handleSend",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 5,
+          "name": "handleStop",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 66,
+            "line_end": 69,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "ChatView.handleStop",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 6,
+          "name": "renderMessage",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 71,
+            "line_end": 112,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 42,
+          "full_name": "ChatView.renderMessage",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 7,
+          "name": "code",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 92,
+            "line_end": 101,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 10,
+          "full_name": "ChatView.code",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 8,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx",
+            "line_start": 1,
+            "line_end": 172,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 172,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ChatView.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 3,
+          "to": 4,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        8
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+      "content_hash": 504494142422107636,
+      "nodes": [
+        {
+          "id": 16,
+          "name": "HubView",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+            "line_start": 21,
+            "line_end": 188,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 168,
+          "full_name": "HubView",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 17,
+          "name": "handleDownload",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+            "line_start": 59,
+            "line_end": 90,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 32,
+          "full_name": "HubView.handleDownload",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 18,
+          "name": "handleSearch",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+            "line_start": 111,
+            "line_end": 114,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "HubView.handleSearch",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 19,
+          "name": "DownloadButton",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+            "line_start": 191,
+            "line_end": 203,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Private",
+          "lines_of_code": 13,
+          "full_name": "DownloadButton",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 20,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx",
+            "line_start": 1,
+            "line_end": 203,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 203,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/HubView.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 16,
+          "to": 19,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        20
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts",
+      "content_hash": 12806003854811746309,
+      "nodes": [
+        {
+          "id": 57,
+          "name": "useTauriEvent",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts",
+            "line_start": 4,
+            "line_end": 30,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 27,
+          "full_name": "useTauriEvent",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 58,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts",
+            "line_start": 1,
+            "line_end": 30,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 30,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/hooks/useTauriEvent.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        58
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/store/models.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/store/models.ts",
+      "content_hash": 10224921634061474492,
+      "nodes": [
+        {
+          "id": 64,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/models.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/store/models.ts",
+            "line_start": 1,
+            "line_end": 30,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 30,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/store/models.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        64
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts",
+      "content_hash": 15451743589093522981,
+      "nodes": [
+        {
+          "id": 74,
+          "name": "init",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts",
+            "line_start": 7,
+            "line_end": 29,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Private",
+          "lines_of_code": 23,
+          "full_name": "init",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 75,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts",
+            "line_start": 1,
+            "line_end": 52,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 52,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/workers/shiki.worker.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 75,
+          "to": 74,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        74,
+        75
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+      "content_hash": 18219657632904005175,
+      "nodes": [
+        {
+          "id": 136,
+          "name": "EngineHandle",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+            "line_start": 6,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 4,
+          "full_name": "EngineHandle",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:Drop"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 137,
+          "name": "stop",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+            "line_start": 12,
+            "line_end": 16,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 5,
+          "full_name": "EngineHandle::stop",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 138,
+          "name": "drop",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+            "line_start": 20,
+            "line_end": 25,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 6,
+          "full_name": "EngineHandle::drop",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:Drop",
+            "implements:Drop"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 139,
+          "name": "SpawnOptions",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+            "line_start": 28,
+            "line_end": 33,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 6,
+          "full_name": "SpawnOptions",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 140,
+          "name": "spawn_engine",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/spawner.rs",
+            "line_start": 35,
+            "line_end": 93,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 59,
+          "full_name": "spawn_engine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 140,
+          "to": 136,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+      "content_hash": 4049710454306618540,
+      "nodes": [
+        {
+          "id": 118,
+          "name": "VllmAdapter",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 9,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "VllmAdapter",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 119,
+          "name": "new",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 12,
+            "line_end": 14,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "VllmAdapter::new",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 120,
+          "name": "default",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 18,
+            "line_end": 20,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "VllmAdapter::default",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:Default",
+            "implements:Default"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 121,
+          "name": "name",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 25,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "VllmAdapter::name",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 122,
+          "name": "is_available",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 29,
+            "line_end": 36,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 8,
+          "full_name": "VllmAdapter::is_available",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 123,
+          "name": "suitability_score",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 38,
+            "line_end": 52,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 15,
+          "full_name": "VllmAdapter::suitability_score",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 124,
+          "name": "generate_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 54,
+            "line_end": 79,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 26,
+          "full_name": "VllmAdapter::generate_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 125,
+          "name": "spawn",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/vllm.rs",
+            "line_start": 81,
+            "line_end": 130,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 50,
+          "full_name": "VllmAdapter::spawn",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 120,
+          "to": 119,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 122,
+          "to": 119,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 125,
+          "to": 125,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 125,
+          "to": 119,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 125,
+          "to": 125,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 125,
+          "to": 125,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 118,
+          "to": 119,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+      "content_hash": 14434211918689095788,
+      "nodes": [
+        {
+          "id": 144,
+          "name": "CpuInfo",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+            "line_start": 5,
+            "line_end": 13,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "CpuInfo",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 145,
+          "name": "CpuFeatures",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+            "line_start": 16,
+            "line_end": 24,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "CpuFeatures",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 146,
+          "name": "get_cpu_info",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+            "line_start": 26,
+            "line_end": 48,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 23,
+          "full_name": "get_cpu_info",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 147,
+          "name": "detect_features",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+            "line_start": 50,
+            "line_end": 87,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 38,
+          "full_name": "detect_features",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 148,
+          "name": "detect_numa_nodes",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/profiler/cpu.rs",
+            "line_start": 89,
+            "line_end": 107,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 19,
+          "full_name": "detect_numa_nodes",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 146,
+          "to": 147,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 146,
+          "to": 148,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 146,
+          "to": 144,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 147,
+          "to": 145,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 147,
+          "to": 145,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 147,
+          "to": 145,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/mod.rs",
+      "content_hash": 6633027000678513841,
+      "nodes": [
+        {
+          "id": 182,
+          "name": "ModelInfo",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/mod.rs",
+            "line_start": 8,
+            "line_end": 16,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "ModelInfo",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 183,
+          "name": "from_path",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/mod.rs",
+            "line_start": 19,
+            "line_end": 34,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 16,
+          "full_name": "ModelInfo::from_path",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/vite-env.d.ts": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/vite-env.d.ts",
+      "content_hash": 12946363841406869089,
+      "nodes": [
+        {
+          "id": 73,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/vite-env.d.ts>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/vite-env.d.ts",
+            "line_start": 1,
+            "line_end": 1,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/vite-env.d.ts>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [],
+      "entry_points": [
+        73
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx",
+      "content_hash": 4569321837845084607,
+      "nodes": [
+        {
+          "id": 21,
+          "name": "ModelBrowser",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx",
+            "line_start": 12,
+            "line_end": 60,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 49,
+          "full_name": "ModelBrowser",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 22,
+          "name": "handleRun",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx",
+            "line_start": 18,
+            "line_end": 28,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 11,
+          "full_name": "ModelBrowser.handleRun",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 23,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx",
+            "line_start": 1,
+            "line_end": 60,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 60,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/ModelBrowser.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 21,
+          "to": 22,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        23
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+      "content_hash": 15322163655662431185,
+      "nodes": [
+        {
+          "id": 77,
+          "name": "get_hardware_profile",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 10,
+            "line_end": 19,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 10,
+          "full_name": "get_hardware_profile",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 78,
+          "name": "list_models",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 22,
+            "line_end": 57,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 36,
+          "full_name": "list_models",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 79,
+          "name": "suggest_engine",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 60,
+            "line_end": 84,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 25,
+          "full_name": "suggest_engine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 80,
+          "name": "InferenceParams",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 87,
+            "line_end": 94,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 8,
+          "full_name": "InferenceParams",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 81,
+          "name": "start_inference",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 97,
+            "line_end": 254,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 158,
+          "full_name": "start_inference",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 82,
+          "name": "start_local_server",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 257,
+            "line_end": 271,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 15,
+          "full_name": "start_local_server",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 83,
+          "name": "stop_local_server",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 274,
+            "line_end": 284,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 11,
+          "full_name": "stop_local_server",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 84,
+          "name": "search_hub_models",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 287,
+            "line_end": 289,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "search_hub_models",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 85,
+          "name": "stop_inference",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 292,
+            "line_end": 299,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 8,
+          "full_name": "stop_inference",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 86,
+          "name": "start_download",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/commands.rs",
+            "line_start": 302,
+            "line_end": 356,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 55,
+          "full_name": "start_download",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "tauri::command"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 79,
+          "to": 77,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+      "content_hash": 10455698550791165061,
+      "nodes": [
+        {
+          "id": 98,
+          "name": "LmdeployAdapter",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 9,
+            "line_end": 9,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 1,
+          "full_name": "LmdeployAdapter",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 99,
+          "name": "new",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 12,
+            "line_end": 14,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "LmdeployAdapter::new",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 100,
+          "name": "default",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 18,
+            "line_end": 20,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "LmdeployAdapter::default",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "impl_trait:Default",
+            "implements:Default"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 101,
+          "name": "name",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 25,
+            "line_end": 27,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "LmdeployAdapter::name",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 102,
+          "name": "is_available",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 29,
+            "line_end": 36,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 8,
+          "full_name": "LmdeployAdapter::is_available",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 103,
+          "name": "suitability_score",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 38,
+            "line_end": 50,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 13,
+          "full_name": "LmdeployAdapter::suitability_score",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 104,
+          "name": "generate_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 52,
+            "line_end": 68,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 17,
+          "full_name": "LmdeployAdapter::generate_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 105,
+          "name": "spawn",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/engines/lmdeploy.rs",
+            "line_start": 70,
+            "line_end": 114,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 45,
+          "full_name": "LmdeployAdapter::spawn",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 100,
+          "to": 99,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 102,
+          "to": 99,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 105,
+          "to": 105,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 105,
+          "to": 99,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 105,
+          "to": 105,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 105,
+          "to": 105,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 98,
+          "to": 99,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/App.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/App.tsx",
+      "content_hash": 2148661969310154746,
+      "nodes": [
+        {
+          "id": 1,
+          "name": "App",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/App.tsx",
+            "line_start": 17,
+            "line_end": 98,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Private",
+          "lines_of_code": 82,
+          "full_name": "App",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 2,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/App.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/App.tsx",
+            "line_start": 1,
+            "line_end": 100,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 100,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/App.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 2,
+          "to": 1,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        2
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+      "content_hash": 17930547134405316400,
+      "nodes": [
+        {
+          "id": 160,
+          "name": "EngineRecommendation",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 10,
+            "line_end": 18,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 9,
+          "full_name": "EngineRecommendation",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Debug",
+            "derive:Clone",
+            "derive:Serialize",
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 161,
+          "name": "inspect_magic_bytes",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 27,
+            "line_end": 43,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 17,
+          "full_name": "inspect_magic_bytes",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 162,
+          "name": "select_engine",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 45,
+            "line_end": 155,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 111,
+          "full_name": "select_engine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 163,
+          "name": "MockEngine",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 166,
+            "line_end": 166,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 1,
+          "full_name": "MockEngine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "extends:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 164,
+          "name": "name",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 170,
+            "line_end": 170,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 1,
+          "full_name": "MockEngine::name",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "cfg_test",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 165,
+          "name": "is_available",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 171,
+            "line_end": 171,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 1,
+          "full_name": "MockEngine::is_available",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "cfg_test",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 166,
+          "name": "suitability_score",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 172,
+            "line_end": 172,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 1,
+          "full_name": "MockEngine::suitability_score",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "cfg_test",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 167,
+          "name": "generate_flags",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 173,
+            "line_end": 173,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 1,
+          "full_name": "MockEngine::generate_flags",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "cfg_test",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 168,
+          "name": "spawn",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 174,
+            "line_end": 176,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 3,
+          "full_name": "MockEngine::spawn",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "async_trait",
+            "impl_trait:EngineAdapter",
+            "cfg_test",
+            "implements:EngineAdapter"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 169,
+          "name": "mock_profile",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 179,
+            "line_end": 222,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 44,
+          "full_name": "mock_profile",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "cfg_test"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 170,
+          "name": "test_decision_tree_oom_risk_high",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/router/decision_tree.rs",
+            "line_start": 225,
+            "line_end": 238,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 14,
+          "full_name": "test_decision_tree_oom_risk_high",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": true,
+          "is_generated": false,
+          "attributes": [
+            "test",
+            "cfg_test"
+          ],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 162,
+          "to": 161,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 165,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 166,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 164,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 164,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 167,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 160,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 164,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 160,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 162,
+          "to": 164,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 170,
+          "to": 169,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 170,
+          "to": 162,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 169,
+          "to": 164,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 170,
+          "to": 163,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx",
+      "content_hash": 6518001699432340975,
+      "nodes": [
+        {
+          "id": 24,
+          "name": "OnboardingWizard",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx",
+            "line_start": 7,
+            "line_end": 150,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 144,
+          "full_name": "OnboardingWizard",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 25,
+          "name": "toggleEngine",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx",
+            "line_start": 28,
+            "line_end": 34,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 7,
+          "full_name": "OnboardingWizard.toggleEngine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 26,
+          "name": "finish",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx",
+            "line_start": 36,
+            "line_end": 38,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 3,
+          "full_name": "OnboardingWizard.finish",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 27,
+          "name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx>",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx",
+            "line_start": 1,
+            "line_end": 150,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "typescript",
+          "visibility": "Public",
+          "lines_of_code": 150,
+          "full_name": "<module:/home/mirac/Downloads/Forge_Project/forge/src/components/OnboardingWizard.tsx>",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 24,
+          "to": 25,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 24,
+          "to": 25,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 24,
+          "to": 25,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 24,
+          "to": 25,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        },
+        {
+          "from": 24,
+          "to": 26,
+          "confidence": "HighLikely",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": [
+        27
+      ]
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/mod.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/mod.rs",
+      "content_hash": 17233558560748992916,
+      "nodes": [
+        {
+          "id": 130,
+          "name": "HubModel",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/mod.rs",
+            "line_start": 6,
+            "line_end": 11,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 6,
+          "full_name": "HubModel",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Serialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 131,
+          "name": "HfModelResponse",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/mod.rs",
+            "line_start": 14,
+            "line_end": 19,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 6,
+          "full_name": "HfModelResponse",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 132,
+          "name": "search_models",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/hub/mod.rs",
+            "line_start": 21,
+            "line_end": 53,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 33,
+          "full_name": "search_models",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 132,
+          "to": 130,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    },
+    "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/stream.rs": {
+      "path": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/stream.rs",
+      "content_hash": 4044420610888153264,
+      "nodes": [
+        {
+          "id": 141,
+          "name": "LlamaLine",
+          "kind": "Struct",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/stream.rs",
+            "line_start": 4,
+            "line_end": 10,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Private",
+          "lines_of_code": 7,
+          "full_name": "LlamaLine",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [
+            "derive:serde::Deserialize"
+          ],
+          "documentation": null
+        },
+        {
+          "id": 142,
+          "name": "parse_llamacpp_line",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/stream.rs",
+            "line_start": 12,
+            "line_end": 22,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 11,
+          "full_name": "parse_llamacpp_line",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        },
+        {
+          "id": 143,
+          "name": "stream_llamacpp",
+          "kind": "Function",
+          "location": {
+            "file": "/home/mirac/Downloads/Forge_Project/forge/src-tauri/src/process/stream.rs",
+            "line_start": 24,
+            "line_end": 37,
+            "column_start": 0,
+            "column_end": 0
+          },
+          "language": "rust",
+          "visibility": "Public",
+          "lines_of_code": 14,
+          "full_name": "stream_llamacpp",
+          "parent_id": null,
+          "is_async": false,
+          "is_test": false,
+          "is_generated": false,
+          "attributes": [],
+          "documentation": null
+        }
+      ],
+      "edges": [
+        {
+          "from": 143,
+          "to": 142,
+          "confidence": "Certain",
+          "is_conditional": false,
+          "is_recursive": false,
+          "call_count": 1
+        }
+      ],
+      "entry_points": []
+    }
+  }
+}
