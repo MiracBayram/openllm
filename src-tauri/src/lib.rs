@@ -35,7 +35,6 @@ pub struct AppState {
     pub active_server_ports: Mutex<HashMap<String, u16>>,
     pub active_download_tokens: Mutex<HashMap<String, tokio_util::sync::CancellationToken>>,
     pub db: Option<crate::storage::pool::StorageCore>,
-    pub embedding_model: Mutex<Option<std::sync::Arc<std::sync::Mutex<fastembed::TextEmbedding>>>>,
     pub autopsy_session: Mutex<Option<crate::profiler::autopsy::AutopsySession>>,
     pub ipc_bus: Option<std::sync::Arc<crate::ipc::ws::BinaryIpcBus>>,
 }
@@ -268,7 +267,6 @@ pub fn run() {
                 active_server_ports: Mutex::new(HashMap::new()),
                 active_download_tokens: Mutex::new(HashMap::new()),
                 db: db_conn,
-                embedding_model: Mutex::new(None),
                 autopsy_session: Mutex::new(None),
                 ipc_bus: ipc_bus.clone(),
             });
