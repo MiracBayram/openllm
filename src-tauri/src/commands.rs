@@ -572,12 +572,10 @@ pub fn toggle_ghost_hud(app: AppHandle) -> Result<bool, String> {
         Ok(false)
     } else {
         let ghost = tauri::WebviewWindowBuilder::new(&app, "ghost-hud", tauri::WebviewUrl::App("ghost.html".into()))
-            .transparent(true)
             .decorations(false)
             .always_on_top(true)
             .skip_taskbar(true)
             .resizable(false)
-            // .inner_size(256.0, 256.0) // Can be set via CSS or specific window size
             .build()
             .map_err(|e| format!("Failed to build ghost window: {}", e))?;
             

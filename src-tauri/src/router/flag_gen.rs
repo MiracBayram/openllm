@@ -36,6 +36,7 @@ pub fn detect_optimal_threads_and_mask(cpu: &CpuInfo, _model_size_mb: u64) -> (u
 }
 
 pub fn build_numa_wrapper(cpu: &CpuInfo) -> Vec<String> {
+    #[allow(unused_mut)]
     let mut wrapper = Vec::new();
     if cpu.numa_nodes > 1 {
         // Simple numa interleave
@@ -49,7 +50,9 @@ pub fn build_numa_wrapper(cpu: &CpuInfo) -> Vec<String> {
 }
 
 pub fn build_affinity_wrapper(cpu: &CpuInfo) -> Vec<String> {
+    #[allow(unused_mut)]
     let mut wrapper = Vec::new();
+    #[allow(unused_variables)]
     let (threads, _) = detect_optimal_threads_and_mask(cpu, 0);
     
     #[cfg(target_os = "linux")]
