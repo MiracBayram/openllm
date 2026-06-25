@@ -26,9 +26,6 @@ jobs:
           - platform: 'ubuntu-22.04'
             args: ''
             target: 'x86_64-unknown-linux-gnu'
-          - platform: 'ubuntu-22.04'
-            args: '--target i686-unknown-linux-gnu'
-            target: 'i686-unknown-linux-gnu'
           - platform: 'windows-latest'
             args: ''
             target: 'x86_64-pc-windows-msvc'
@@ -54,19 +51,10 @@ jobs:
           targets: ${{ matrix.target }}
 
       - name: install dependencies (ubuntu x64 & arm64)
-        if: startsWith(matrix.platform, 'ubuntu') && matrix.target != 'i686-unknown-linux-gnu'
+        if: startsWith(matrix.platform, 'ubuntu')
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf rpm pacman-package-manager fakeroot
-
-      - name: install dependencies (ubuntu i386)
-        if: matrix.platform == 'ubuntu-22.04' && matrix.target == 'i686-unknown-linux-gnu'
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt-get update || true
-          sudo apt-get install -y gcc-multilib g++-multilib pkg-config libgtk-3-dev:i386 libwebkit2gtk-4.1-dev:i386 libappindicator3-dev:i386 librsvg2-dev:i386 patchelf rpm
-          echo "PKG_CONFIG_PATH=/usr/lib/i386-linux-gnu/pkgconfig:/usr/share/pkgconfig" >> $GITHUB_ENV
-          echo "PKG_CONFIG_ALLOW_CROSS=1" >> $GITHUB_ENV
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf rpm
 
       - name: install frontend dependencies
         run: npm install
