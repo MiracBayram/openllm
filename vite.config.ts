@@ -9,12 +9,30 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig(async () => ({
   plugins: [preact(), tailwindcss()],
+  resolve: {
+    alias: {
+      "react": "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat",
+      "react/jsx-runtime": "preact/jsx-runtime"
+    }
+  },
   worker: { format: 'es' },
   build: {
     rollupOptions: {
       input: {
         main: './index.html',
         ghost: './ghost.html'
+      },
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('shiki') || id.includes('wasm') || id.includes('cpp') || id.includes('typescript') || id.includes('python') || id.includes('java')) {
+              return 'syntax-heavy';
+            }
+            return 'vendor';
+          }
+        }
       }
     }
   },

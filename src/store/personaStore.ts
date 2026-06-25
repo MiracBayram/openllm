@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { useUiStore } from './uiStore';
 
 export type PersonaId = 'spectral_matrix' | 'neural_decay' | 'kinetic_industrial' | 'solar_witch' | 'legacy_forge';
 
@@ -98,9 +99,7 @@ export const usePersonaStore = create<PersonaState>()(
       activePersonaId: 'spectral_matrix',
       setActivePersona: (id: PersonaId) => {
         // Just trigger the morph in UI store. The overlay will call the actual theme swap mid-animation.
-        import('./uiStore').then(module => {
-          (module as any).useUiStore.getState().triggerMorphTransition(id);
-        });
+        useUiStore.getState().triggerMorphTransition(id);
       },
       // Direct setter for the overlay to call when screen goes black
       setPersonaDirectly: (id: PersonaId) => {

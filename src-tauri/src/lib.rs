@@ -251,6 +251,7 @@ pub fn run() {
                 db_conn = Some(core);
             }
 
+            #[allow(unused_mut)]
             let mut ipc_bus = None;
             #[cfg(unix)]
             {

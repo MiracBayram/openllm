@@ -9,6 +9,7 @@ import { GlassPanel } from './ui/GlassPanel';
 import { NeonButton } from './ui/NeonButton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { VectorGalaxy } from './VectorGalaxy';
+import { useToastStore } from '../store/toastStore';
 
 interface RagDocument {
   id: string;
@@ -59,23 +60,19 @@ export function KnowledgeView() {
       if (selected && typeof selected === 'string') {
         setLoading(true);
         await invoke('ingest_document', { filePath: selected, agentId: selectedAgent });
-        import('../store/toastStore').then(({ useToastStore }) => {
-          useToastStore.getState().addToast({
-            type: 'success',
-            title: 'Document Ingested',
-            message: 'Document successfully parsed and chunked.'
-          });
+        useToastStore.getState().addToast({
+          type: 'success',
+          title: 'Document Ingested',
+          message: 'Document successfully parsed and chunked.'
         });
         await fetchDocuments(selectedAgent);
       }
     } catch (e: any) {
       console.error(e);
-      import('../store/toastStore').then(({ useToastStore }) => {
-        useToastStore.getState().addToast({
-          type: 'error',
-          title: 'Ingestion Failed',
-          message: e.message || e
-        });
+      useToastStore.getState().addToast({
+        type: 'error',
+        title: 'Ingestion Failed',
+        message: e.message || e
       });
       setLoading(false);
     }
@@ -85,12 +82,10 @@ export function KnowledgeView() {
     try {
       await invoke('delete_rag_document', { id });
       setDocuments(prev => prev.filter(d => d.id !== id));
-      import('../store/toastStore').then(({ useToastStore }) => {
-        useToastStore.getState().addToast({
-          type: 'success',
-          title: 'Deleted',
-          message: 'Document removed from knowledge base.'
-        });
+      useToastStore.getState().addToast({
+        type: 'success',
+        title: 'Deleted',
+        message: 'Document removed from knowledge base.'
       });
     } catch (e: any) {
       console.error(e);

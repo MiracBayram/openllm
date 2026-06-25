@@ -17,6 +17,7 @@ pub struct RingHeader {
 
 pub struct TokenRing {
     mmap: MmapMut,
+    #[allow(dead_code)]
     path: PathBuf,
     header: Arc<RingHeader>,
 }

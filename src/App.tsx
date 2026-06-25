@@ -13,6 +13,7 @@ import { HubView } from './components/HubView';
 import { ServerView } from './components/ServerView';
 import { SettingsView } from './components/SettingsView';
 import { AgentsView } from './components/AgentsView';
+import { useToastStore } from './store/toastStore';
 import { KnowledgeView } from './components/KnowledgeView';
 import { OnboardingWizard } from './components/OnboardingWizard';
 import { Omnibar } from './components/Omnibar';
@@ -88,12 +89,10 @@ function App() {
       if (config?.storage.models_directory) {
         scanModels(config.storage.models_directory);
       }
-      import('./store/toastStore').then(({ useToastStore }) => {
-        useToastStore.getState().addToast({
-          type: 'success',
-          title: 'Download Complete',
-          message: `Model ${payload.model_id} downloaded successfully.`
-        });
+      useToastStore.getState().addToast({
+        type: 'success',
+        title: 'Download Complete',
+        message: `Model ${payload.model_id} downloaded successfully.`
       });
     }
 

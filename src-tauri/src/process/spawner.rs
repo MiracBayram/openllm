@@ -126,7 +126,13 @@ pub async fn spawn_engine(
         job
     };
 
+    #[cfg(windows)]
+    let job_handle_raw = job_handle.0 as usize;
+
     tokio::spawn(async move {
+        #[cfg(windows)]
+        let job_handle = windows::Win32::Foundation::HANDLE(job_handle_raw as *mut std::ffi::c_void);
+
         tokio::select! {
             _ = child.wait() => {}
             _ = stop_rx => {
@@ -149,7 +155,7 @@ pub async fn spawn_engine(
         
         #[cfg(windows)]
         unsafe {
-            use windows::Win32::Foundation::{CloseHandle, HANDLE};
+            use windows::Win32::Foundation::CloseHandle;
             if !job_handle.is_invalid() {
                 let _ = CloseHandle(job_handle);
             }

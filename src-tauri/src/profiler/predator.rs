@@ -46,6 +46,7 @@ pub fn rank_and_throttle_hogs() -> Option<PredationEvent> {
         return None;
     }
 
+    #[allow(unused_mut, unused_assignments)]
     let mut action_taken = "Ranked (No action)".to_string();
 
     #[cfg(target_os = "linux")]

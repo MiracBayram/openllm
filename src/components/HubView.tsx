@@ -5,6 +5,7 @@ import { Icon } from './ui/Icon';
 import { Select } from './ui/Select';
 import { useModelsStore } from '../store/models';
 import { useConfigStore } from '../store/configStore';
+import { useToastStore } from '../store/toastStore';
 import { useDownloadStore } from '../store/downloadStore';
 import { motion } from 'framer-motion';
 import { GlassPanel } from './ui/GlassPanel';
@@ -116,12 +117,10 @@ export function HubView() {
   const handleDeleteModel = async (modelPath: string) => {
     try {
       await invoke('delete_model', { modelPath });
-      import('../store/toastStore').then(({ useToastStore }) => {
-        useToastStore.getState().addToast({
-          type: 'success',
-          title: 'Model Deleted',
-          message: `Successfully deleted model from disk.`
-        });
+      useToastStore.getState().addToast({
+        type: 'success',
+        title: 'Model Deleted',
+        message: `Successfully deleted model from disk.`
       });
       const appConfig = useConfigStore.getState().config;
       if (appConfig?.storage.models_directory) {
@@ -129,12 +128,10 @@ export function HubView() {
       }
     } catch (e: any) {
       console.error(e);
-      import('../store/toastStore').then(({ useToastStore }) => {
-        useToastStore.getState().addToast({
-          type: 'error',
-          title: 'Delete Failed',
-          message: e.message || e
-        });
+      useToastStore.getState().addToast({
+        type: 'error',
+        title: 'Delete Failed',
+        message: e.message || e
       });
     }
   };
